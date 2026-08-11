@@ -202,6 +202,38 @@
             color: #b04a5e;
         }
 
+        /* Contact flex: two h2 on the left, photo on the right */
+        .contact-section .contact-flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+        .contact-section .contact-info {
+            text-align: left;
+            flex: 1 1 320px;
+        }
+        .contact-section .contact-info h2 {
+            padding-bottom: 12px;
+        }
+        .contact-section .breeder-photo {
+            display: block;
+            width: 420px;
+            max-width: 92%;
+            flex: 0 0 auto;
+            background: rgba(255, 255, 255, 0.15);
+            overflow: hidden;
+            line-height: 0;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+        }
+        .contact-section .breeder-photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
         @media (max-width: 980px) {
             .about-hero h1 {
                 font-size: 34px;
@@ -215,6 +247,18 @@
             .contact-section h2 {
                 font-size: 30px;
             }
+            .contact-section .contact-flex {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .contact-section .contact-info {
+                text-align: center;
+                flex: 1 1 auto;
+            }
+            .contact-section .breeder-photo {
+                width: 100%;
+                max-width: 480px;
+            }
         }
         @media (max-width: 767px) {
             .contact-form .half {
@@ -226,7 +270,7 @@
 </head>
 
 <body
-    class="page-template-default page page-id-about custom-background wp-theme-Divi et_pb_button_helper_class et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
+    class="page-template-default page custom-background wp-theme-Divi et_pb_button_helper_class et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
     <div id="page-container">
 
         <div id="top-header">
@@ -238,7 +282,7 @@
             </div>
         </div>
 
-        <header id="main-header" data-height-onload="112">
+        <header id="main-header" data-height-onload="66">
             <div class="container clearfix et_menu_container">
                 <div class="logo_container">
                     <span class="logo_helper"></span>
@@ -247,7 +291,7 @@
                         <span class="logo-by">BY COCO</span>
                     </a>
                 </div>
-                <div id="et-top-navigation" data-height="112" data-fixed-height="40">
+                <div id="et-top-navigation" data-height="66" data-fixed-height="40">
                     <nav id="top-menu-nav">
                         <ul id="top-menu" class="nav">
                             <li class="menu-item menu-item-home"><a href="index.html">Home</a></li>
@@ -259,6 +303,15 @@
                     </nav>
                     <div id="et_top_search">
                         <span id="et_search_icon"></span>
+                    </div>
+                    <div class="et_search_outer">
+                        <div class="et_search_form_container">
+                            <form role="search" method="get" class="et-search-form" action="index.html">
+                                <input type="search" class="et-search-field" placeholder="Search …" value="" name="s"
+                                    title="Search for:" />
+                            </form>
+                            <span class="et_close_search_field"></span>
+                        </div>
                     </div>
                     <div id="et_mobile_nav_menu">
                         <div class="mobile_nav closed">
@@ -344,8 +397,14 @@
                         <!-- CONTACT US -->
                         <section class="contact-section">
                             <div class="container">
-                                <h2>Contact Us</h2>
-                                <p class="about-text">When searching for a Ragdoll kitten, choosing high-quality Ragdoll
+                                <div class="contact-flex">
+                                    <div class="contact-info">
+                                        <h2>Contact Us</h2>
+                                        <h2>(626) 863-4435</h2>
+                                    </div>
+                                    <div class="breeder-photo"><img src="img/cat.jpeg" alt="Meet Bubbles"></div>
+                                </div>
+                                <!--<p class="about-text">When searching for a Ragdoll kitten, choosing high-quality Ragdoll
                                     cat breeders like Ragdoll Kittens by Kelly is crucial for ensuring exceptional
                                     lineage, health, and personality. Reputable breeders prioritize champion
                                     bloodlines—such as those tracing back to TICA Champions like &#8220;Overland Trail
@@ -373,7 +432,8 @@
                                     </p>
                                     <p class="captcha-row">5 + 1 = <input type="text" name="captcha" autocomplete="off"></p>
                                     <button type="submit" class="submit-btn">Submit</button>
-                                </form>
+                                </form> -->
+
                             </div>
                         </section>
 

@@ -85,7 +85,7 @@ h6{font-size:14px}
 #top-header .container{padding-top:.75em;font-weight:600}
 #top-header,#top-header .container,#top-header #et-info,#top-header .et-social-icon a{line-height:1em}
 #et-info{float:left}
-#et-info-phone:before{content:"\e090";position:relative;top:2px;margin-right:2px}
+#et-info-phone:before{content:"";display:inline-block;width:20px;height:20px;background:url(../img/A_small_square_icon_with_round_2026-08-11T14-45-43.png) no-repeat center center;background-size:contain;position:relative;top:4px;margin-right:6px}
 #et-info-phone{margin-right:13px}
 #et-secondary-menu{float:right}
 
