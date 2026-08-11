@@ -1,5 +1,15 @@
 /* ===== Custom overrides (loaded AFTER divi.css) ===== */
 
+/* Simple contact phone display */
+.contact-phone{
+    font-family:'Playfair Display',Georgia,"Times New Roman",serif;
+    font-size:42px;
+    font-weight:700;
+    color:#ffffff;
+    letter-spacing:.5px;
+    margin:10px 0 0;
+}
+
 /* Text logo replacing the original image logo */
 .text-logo{
     display:inline-block;
