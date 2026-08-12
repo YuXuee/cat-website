@@ -10,6 +10,27 @@
     margin:10px 0 0;
 }
 
+/* Get In Touch button (matches health-guarantee page style) */
+.cta-btn{
+    display:inline-block;
+    font-family:'Poppins',Helvetica,Arial,sans-serif;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#fff;
+    border:2px solid #fff;
+    border-radius:3px;
+    padding:13px 32px;
+    margin-top:24px;
+    text-decoration:none;
+    transition:all .2s ease-in-out;
+}
+.cta-btn:hover{
+    background:#fff;
+    color:#ff6a88;
+}
+
 /* Text logo replacing the original image logo */
 .text-logo{
     display:inline-block;
